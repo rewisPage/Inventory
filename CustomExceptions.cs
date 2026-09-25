@@ -15,3 +15,4 @@
         public CurrencyFormatException(string message) : base(message) { }
     }
 }
+

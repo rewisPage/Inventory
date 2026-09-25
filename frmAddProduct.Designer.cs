@@ -17,204 +17,206 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblProduct = new System.Windows.Forms.Label();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.lblMfgDate = new System.Windows.Forms.Label();
-            this.lblExpDate = new System.Windows.Forms.Label();
-            this.lblQty = new System.Windows.Forms.Label();
-            this.lblSellPrice = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.txtProductName = new System.Windows.Forms.TextBox();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.dtPickerMfgDate = new System.Windows.Forms.DateTimePicker();
-            this.dtPickerExpDate = new System.Windows.Forms.DateTimePicker();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.txtSellPrice = new System.Windows.Forms.TextBox();
-            this.richTxtDescription = new System.Windows.Forms.RichTextBox();
-            this.btnAddProduct = new System.Windows.Forms.Button();
-            this.gridViewProductList = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).BeginInit();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            lblProduct = new Label();
+            lblCategory = new Label();
+            lblMfgDate = new Label();
+            lblExpDate = new Label();
+            lblQty = new Label();
+            lblSellPrice = new Label();
+            lblDescription = new Label();
+            txtProductName = new TextBox();
+            cbCategory = new ComboBox();
+            dtPickerMfgDate = new DateTimePicker();
+            dtPickerExpDate = new DateTimePicker();
+            txtQuantity = new TextBox();
+            txtSellPrice = new TextBox();
+            richTxtDescription = new RichTextBox();
+            btnAddProduct = new Button();
+            gridViewProductList = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)gridViewProductList).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(12, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(125, 25);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Add Product";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblTitle.Location = new Point(12, 9);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(126, 25);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Add Product";
             // 
             // lblProduct
             // 
-            this.lblProduct.AutoSize = true;
-            this.lblProduct.Location = new System.Drawing.Point(14, 52);
-            this.lblProduct.Name = "lblProduct";
-            this.lblProduct.Size = new System.Drawing.Size(47, 13);
-            this.lblProduct.TabIndex = 1;
-            this.lblProduct.Text = "Product";
+            lblProduct.AutoSize = true;
+            lblProduct.Location = new Point(14, 52);
+            lblProduct.Name = "lblProduct";
+            lblProduct.Size = new Size(47, 13);
+            lblProduct.TabIndex = 1;
+            lblProduct.Text = "Product";
             // 
             // lblCategory
             // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(14, 82);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(52, 13);
-            this.lblCategory.TabIndex = 2;
-            this.lblCategory.Text = "Category";
+            lblCategory.AutoSize = true;
+            lblCategory.Location = new Point(14, 82);
+            lblCategory.Name = "lblCategory";
+            lblCategory.Size = new Size(53, 13);
+            lblCategory.TabIndex = 2;
+            lblCategory.Text = "Category";
             // 
             // lblMfgDate
             // 
-            this.lblMfgDate.AutoSize = true;
-            this.lblMfgDate.Location = new System.Drawing.Point(14, 114);
-            this.lblMfgDate.Name = "lblMfgDate";
-            this.lblMfgDate.Size = new System.Drawing.Size(54, 13);
-            this.lblMfgDate.TabIndex = 3;
-            this.lblMfgDate.Text = "Mfg. Date";
+            lblMfgDate.AutoSize = true;
+            lblMfgDate.Location = new Point(14, 114);
+            lblMfgDate.Name = "lblMfgDate";
+            lblMfgDate.Size = new Size(58, 13);
+            lblMfgDate.TabIndex = 3;
+            lblMfgDate.Text = "Mfg. Date";
             // 
             // lblExpDate
             // 
-            this.lblExpDate.AutoSize = true;
-            this.lblExpDate.Location = new System.Drawing.Point(14, 144);
-            this.lblExpDate.Name = "lblExpDate";
-            this.lblExpDate.Size = new System.Drawing.Size(54, 13);
-            this.lblExpDate.TabIndex = 4;
-            this.lblExpDate.Text = "Exp. Date";
+            lblExpDate.AutoSize = true;
+            lblExpDate.Location = new Point(14, 144);
+            lblExpDate.Name = "lblExpDate";
+            lblExpDate.Size = new Size(55, 13);
+            lblExpDate.TabIndex = 4;
+            lblExpDate.Text = "Exp. Date";
             // 
             // lblQty
             // 
-            this.lblQty.AutoSize = true;
-            this.lblQty.Location = new System.Drawing.Point(14, 175);
-            this.lblQty.Name = "lblQty";
-            this.lblQty.Size = new System.Drawing.Size(26, 13);
-            this.lblQty.TabIndex = 5;
-            this.lblQty.Text = "Qty";
+            lblQty.AutoSize = true;
+            lblQty.Location = new Point(14, 175);
+            lblQty.Name = "lblQty";
+            lblQty.Size = new Size(24, 13);
+            lblQty.TabIndex = 5;
+            lblQty.Text = "Qty";
             // 
             // lblSellPrice
             // 
-            this.lblSellPrice.AutoSize = true;
-            this.lblSellPrice.Location = new System.Drawing.Point(14, 206);
-            this.lblSellPrice.Name = "lblSellPrice";
-            this.lblSellPrice.Size = new System.Drawing.Size(53, 13);
-            this.lblSellPrice.TabIndex = 6;
-            this.lblSellPrice.Text = "Sell Price";
+            lblSellPrice.AutoSize = true;
+            lblSellPrice.Location = new Point(14, 206);
+            lblSellPrice.Name = "lblSellPrice";
+            lblSellPrice.Size = new Size(52, 13);
+            lblSellPrice.TabIndex = 6;
+            lblSellPrice.Text = "Sell Price";
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(340, 52);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(63, 13);
-            this.lblDescription.TabIndex = 7;
-            this.lblDescription.Text = "Description";
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new Point(392, 52);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new Size(66, 13);
+            lblDescription.TabIndex = 7;
+            lblDescription.Text = "Description";
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(92, 49);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(217, 22);
-            this.txtProductName.TabIndex = 8;
+            txtProductName.Location = new Point(92, 49);
+            txtProductName.Name = "txtProductName";
+            txtProductName.Size = new Size(275, 22);
+            txtProductName.TabIndex = 8;
             // 
             // cbCategory
             // 
-            this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(92, 79);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(217, 21);
-            this.cbCategory.TabIndex = 9;
+            cbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCategory.FormattingEnabled = true;
+            cbCategory.Location = new Point(92, 79);
+            cbCategory.Name = "cbCategory";
+            cbCategory.Size = new Size(275, 21);
+            cbCategory.TabIndex = 9;
             // 
             // dtPickerMfgDate
             // 
-            this.dtPickerMfgDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtPickerMfgDate.Location = new System.Drawing.Point(92, 109);
-            this.dtPickerMfgDate.Name = "dtPickerMfgDate";
-            this.dtPickerMfgDate.Size = new System.Drawing.Size(217, 22);
-            this.dtPickerMfgDate.TabIndex = 10;
+            dtPickerMfgDate.Format = DateTimePickerFormat.Short;
+            dtPickerMfgDate.Location = new Point(92, 109);
+            dtPickerMfgDate.Name = "dtPickerMfgDate";
+            dtPickerMfgDate.Size = new Size(275, 22);
+            dtPickerMfgDate.TabIndex = 10;
             // 
             // dtPickerExpDate
             // 
-            this.dtPickerExpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtPickerExpDate.Location = new System.Drawing.Point(92, 139);
-            this.dtPickerExpDate.Name = "dtPickerExpDate";
-            this.dtPickerExpDate.Size = new System.Drawing.Size(217, 22);
-            this.dtPickerExpDate.TabIndex = 11;
+            dtPickerExpDate.Format = DateTimePickerFormat.Short;
+            dtPickerExpDate.Location = new Point(92, 139);
+            dtPickerExpDate.Name = "dtPickerExpDate";
+            dtPickerExpDate.Size = new Size(275, 22);
+            dtPickerExpDate.TabIndex = 11;
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(92, 172);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(217, 22);
-            this.txtQuantity.TabIndex = 12;
+            txtQuantity.Location = new Point(92, 172);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(275, 22);
+            txtQuantity.TabIndex = 12;
             // 
             // txtSellPrice
             // 
-            this.txtSellPrice.Location = new System.Drawing.Point(92, 203);
-            this.txtSellPrice.Name = "txtSellPrice";
-            this.txtSellPrice.Size = new System.Drawing.Size(217, 22);
-            this.txtSellPrice.TabIndex = 13;
+            txtSellPrice.Location = new Point(92, 203);
+            txtSellPrice.Name = "txtSellPrice";
+            txtSellPrice.Size = new Size(275, 22);
+            txtSellPrice.TabIndex = 13;
             // 
             // richTxtDescription
             // 
-            this.richTxtDescription.Location = new System.Drawing.Point(343, 76);
-            this.richTxtDescription.Name = "richTxtDescription";
-            this.richTxtDescription.Size = new System.Drawing.Size(243, 149);
-            this.richTxtDescription.TabIndex = 14;
-            this.richTxtDescription.Text = "";
+            richTxtDescription.Location = new Point(395, 76);
+            richTxtDescription.Name = "richTxtDescription";
+            richTxtDescription.Size = new Size(427, 149);
+            richTxtDescription.TabIndex = 14;
+            richTxtDescription.Text = "";
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(500, 237);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(86, 26);
-            this.btnAddProduct.TabIndex = 15;
-            this.btnAddProduct.Text = "Add Product";
-            this.btnAddProduct.UseVisualStyleBackColor = true;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
+            btnAddProduct.Location = new Point(736, 231);
+            btnAddProduct.Name = "btnAddProduct";
+            btnAddProduct.Size = new Size(86, 26);
+            btnAddProduct.TabIndex = 15;
+            btnAddProduct.Text = "Add Product";
+            btnAddProduct.UseVisualStyleBackColor = true;
+            btnAddProduct.Click += btnAddProduct_Click;
             // 
             // gridViewProductList
             // 
-            this.gridViewProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewProductList.Location = new System.Drawing.Point(17, 274);
-            this.gridViewProductList.Name = "gridViewProductList";
-            this.gridViewProductList.RowHeadersWidth = 51;
-            this.gridViewProductList.Size = new System.Drawing.Size(569, 140);
-            this.gridViewProductList.TabIndex = 16;
+            gridViewProductList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridViewProductList.Location = new Point(17, 274);
+            gridViewProductList.MultiSelect = false;
+            gridViewProductList.Name = "gridViewProductList";
+            gridViewProductList.RowHeadersVisible = false;
+            gridViewProductList.RowHeadersWidth = 51;
+            gridViewProductList.Size = new Size(805, 140);
+            gridViewProductList.TabIndex = 16;
             // 
             // frmAddProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 431);
-            this.Controls.Add(this.gridViewProductList);
-            this.Controls.Add(this.btnAddProduct);
-            this.Controls.Add(this.richTxtDescription);
-            this.Controls.Add(this.txtSellPrice);
-            this.Controls.Add(this.txtQuantity);
-            this.Controls.Add(this.dtPickerExpDate);
-            this.Controls.Add(this.dtPickerMfgDate);
-            this.Controls.Add(this.cbCategory);
-            this.Controls.Add(this.txtProductName);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblSellPrice);
-            this.Controls.Add(this.lblQty);
-            this.Controls.Add(this.lblExpDate);
-            this.Controls.Add(this.lblMfgDate);
-            this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.lblProduct);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "frmAddProduct";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inventory";
-            this.Load += new System.EventHandler(this.frmAddProduct_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(6F, 13F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(834, 431);
+            Controls.Add(gridViewProductList);
+            Controls.Add(btnAddProduct);
+            Controls.Add(richTxtDescription);
+            Controls.Add(txtSellPrice);
+            Controls.Add(txtQuantity);
+            Controls.Add(dtPickerExpDate);
+            Controls.Add(dtPickerMfgDate);
+            Controls.Add(cbCategory);
+            Controls.Add(txtProductName);
+            Controls.Add(lblDescription);
+            Controls.Add(lblSellPrice);
+            Controls.Add(lblQty);
+            Controls.Add(lblExpDate);
+            Controls.Add(lblMfgDate);
+            Controls.Add(lblCategory);
+            Controls.Add(lblProduct);
+            Controls.Add(lblTitle);
+            Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "frmAddProduct";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Inventory";
+            Load += frmAddProduct_Load;
+            ((System.ComponentModel.ISupportInitialize)gridViewProductList).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
