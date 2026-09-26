@@ -85,16 +85,6 @@ namespace Inventory
                 _Quantity = Quantity(txtQuantity.Text);
                 _SellPrice = SellingPrice(txtSellPrice.Text);
 
-                showProductList.Add(new ProductClass(
-                    _ProductName,
-                    _Category,
-                    _MfgDate,
-                    _ExpDate,
-                    _SellPrice,
-                    _Quantity,
-                    _Description
-                ));
-
                 // Return if no category is selected
                 if (cbCategory.Text == "")
                 {
@@ -103,11 +93,35 @@ namespace Inventory
                 }
 
                 // Return if manufacturing date is later than expiration date
-                if (dtPickerMfgDate.Value > dtPickerExpDate.Value)
+                else if (dtPickerMfgDate.Value > dtPickerExpDate.Value)
                 {
                     MessageBox.Show("Manufacturing date cannot be later than expiration date.", "Date Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
+                // Return if quantity or selling price is less than or equal to zero
+                else if (_Quantity <= 0)
+                {
+                    MessageBox.Show("Quantity must be greater than zero.", "Quantity Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Return if selling price is less than or equal to zero
+                else if (_SellPrice <= 0)
+                {
+                    MessageBox.Show("Selling price must be greater than zero.", "Price Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                showProductList.Add(new ProductClass(
+                   _ProductName,
+                   _Category,
+                   _MfgDate,
+                   _ExpDate,
+                   _SellPrice,
+                   _Quantity,
+                   _Description
+                 ));
 
                 gridViewProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 gridViewProductList.DataSource = showProductList;
