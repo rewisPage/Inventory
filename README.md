@@ -2,9 +2,7 @@
 
 A Windows Forms application written in C# (.NET Framework) created as part of the IT1811 course curriculum. The application demonstrates object-oriented design, Windows Forms data binding using `BindingSource` and `DataGridView`, and regular-expression input validation paired with manually thrown custom exception handling.
 
-<img width="625" height="477" alt="image" src="https://github.com/user-attachments/assets/9cf916c2-5db1-442c-b645-635d6e1294d6" />
-
-<img width="621" height="479" alt="image" src="https://github.com/user-attachments/assets/d8aa59e6-d876-41ba-83e2-1528ec03d0aa" />
+<img width="846" height="474" alt="image" src="https://github.com/user-attachments/assets/85c850f9-ffae-4864-b0bb-7acd941b1ed1" />
 
 
 ---
