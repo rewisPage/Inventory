@@ -95,6 +95,20 @@ namespace Inventory
                     _Description
                 ));
 
+                // Return if no category is selected
+                if (cbCategory.Text == "")
+                {
+                    MessageBox.Show("Please select a category.", "Category Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Return if manufacturing date is later than expiration date
+                if (dtPickerMfgDate.Value > dtPickerExpDate.Value)
+                {
+                    MessageBox.Show("Manufacturing date cannot be later than expiration date.", "Date Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 gridViewProductList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 gridViewProductList.DataSource = showProductList;
 
